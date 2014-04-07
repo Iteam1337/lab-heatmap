@@ -10,8 +10,17 @@ describe('MapCtrl', function () {
     });
   });
 
-  xit('should have tests', function () {
-    
-  });
+  describe('#ctor', function() {
+    it('should set a mock map', function () {
+      var map = {
+        center: {
+          latitude: 45,
+          longitude: -73
+        },
+        zoom: 8
+      };
 
+      expect(scope.map).to.eql(map)
+    });
+  })
 });
