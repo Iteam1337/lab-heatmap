@@ -2,7 +2,7 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
   'use strict';
 
   var MockHeatLayer = function (heatLayer) {
-    var map, pointArray, heatmap;
+    var pointArray;
     var data = [];
 
     uppdrag.map(function (upp) {
@@ -46,6 +46,12 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
         }
       ]
     }
+  };
+
+  $scope.uppdrag = uppdrag;
+
+  $scope.centerOnJob = function (position) {
+    $scope.map.center = { latitude: position.Lat, longitude: position.Lng };
   };
 
 });

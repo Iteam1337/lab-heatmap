@@ -1,4 +1,5 @@
 angular.module('lab-heatmap').service('uppdrag', function () {
+  
   'use strict';
 
   var uppdrag = [
@@ -66,5 +67,5 @@ angular.module('lab-heatmap').service('uppdrag', function () {
   ];
 
   return uppdrag;
-  
+
 });
