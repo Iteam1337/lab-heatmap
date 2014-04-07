@@ -1,4 +1,8 @@
-[
+angular.module('lab-heatmap').service('uppdrag', function () {
+  'use strict';
+
+  var uppdrag = 
+  [
 {
 	'Befattning': 'Kantbockare',
 	'Ort': 'Solna',
@@ -60,4 +64,7 @@
 		'Avslutad': '2014-04-20' 
 	}
 },
-]
+];
+
+  return uppdrag;
+});
