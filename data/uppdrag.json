@@ -1,0 +1,43 @@
+[
+{
+	'Befattning': 'Kantbockare',
+	'Ort': 'Solna',
+	'Lan': 'Stockholms Län',
+	'Position': {
+		'Lat': 59.369468,
+		'Lng': 18.0090972,
+	}
+},{
+	'Befattning': 'Brandman',
+	'Ort': 'Husby',
+	'Lan': 'Stockholms Län',
+	'Position': {
+		'Lat': 59.408474,
+		'Lng': 17.9246094,
+	}	
+},{
+	'Befattning': 'Projektledare',
+	'Ort': 'Huddinge',
+	'Lan': 'Stockholms Län',
+	'Position': {
+		'Lat': 59.2124659,
+		'Lng': 18.0216075,
+	}
+},{
+	'Befattning': 'Sekreterare',
+	'Ort': 'Lidingö',
+	'Lan': 'Stockholms Län',
+	'Position': {
+		'Lat': 59.365037,
+		'Lng': 18.1753876,
+	}
+},{
+	'Befattning': 'Hängmattstestare',
+	'Ort': 'Uddevalla',
+	'Lan': 'Västra Götalands Län',
+	'Position': {
+		'Lat': 58.3524955,
+		'Lng': 11.9401409,
+	}
+},
+]
