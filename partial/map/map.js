@@ -3,48 +3,11 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
 
   var MockHeatLayer = function (heatLayer) {
     var map, pointArray, heatmap;
+    var data = [];
 
-    var data = [
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.2124659, 18.0216075),
-      new google.maps.LatLng(59.365037, 18.1753876),
-      new google.maps.LatLng(59.408474, 17.9246094),
-    ];
+    uppdrag.map(function (upp) {
+      data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
+    });
 
     pointArray = new google.maps.MVCArray(data);
     heatLayer.setData(pointArray);
@@ -56,11 +19,33 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
       longitude: 18.0216075
     },
     heatLayerCallback: function (layer) {
-      //set the heat layers backend data
       var mockHeatLayer = new MockHeatLayer(layer);
     },
     showHeat: true,
-    zoom: 8
+    zoom: 8,
+    options: {
+      styles: [
+        {
+          "featureType": "road",
+          "stylers": [
+            { "color": "#808080" },
+            { "lightness": 51 }
+          ]
+        },
+        {
+          "stylers": [
+            { "saturation": -100 }
+          ]
+        },
+        {
+          "featureType": "water",
+          "stylers": [
+            { "hue": "#0077ff" },
+            { "saturation": 48 }
+          ]
+        }
+      ]
+    }
   };
 
 });

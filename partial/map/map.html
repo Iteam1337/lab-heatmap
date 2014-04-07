@@ -1,5 +1,5 @@
 <div id="map" ng-controller="MapCtrl">
-  <google-map center="map.center" zoom="map.zoom" draggable="true">
+  <google-map center="map.center" zoom="map.zoom" draggable="true" options="map.options">
     <layer namespace="visualization" type="HeatmapLayer" show="map.showHeat" onCreated="map.heatLayerCallback"></layer>
   </google-map>
 </div>
