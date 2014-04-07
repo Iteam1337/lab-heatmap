@@ -9,8 +9,28 @@ describe('uppdrag', function () {
     });
   });
 
-  xit('should have tests', function () {
-    //expect(uppdrag.doSomething()).to.equal('something');
+  it('should return an object', function () {
+    expect(uppdrag).to.be.an('array');
+  });
+
+  it('an uppdrag should have certain properties', function () {
+    var keys = [
+      'Befattning',
+      'Ort',
+      'Lan',
+      'Position',
+      'Aktuell'
+    ];
+
+    expect(uppdrag[0]).to.be.an('object').with.keys(keys);
+  });
+
+  it('an uppdrag should contain longitude and latitude', function () {
+    expect(uppdrag[0].Position).to.be.an('object').with.keys(['Lat','Lng']);
+  });
+
+  it('an uppdrag should contain two dates', function () {
+    expect(uppdrag[0].Aktuell).to.be.an('object').with.keys(['Skapad', 'Avslutad']);
   });
 
 });

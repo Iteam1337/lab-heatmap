@@ -1,0 +1,199 @@
+/**
+ * Remove apperance of form elements
+ * @prop {value} - Property value
+ */
+.appearance(@prop: none) {
+  .prefix(appearance, @prop);
+}
+
+/**
+ * Add a border radius to element
+ * @radius {px} - Border radius
+ */
+.border-radius(@radius: 3px) {
+  .prefix(border-radius, "@{radius}");
+}
+
+/**
+ * Adds a shadow to element (if shadow is inner use "inner-shadow")
+ * @shadow {string} - Shadow string
+ */
+.box-shadow(@shadow) {
+  .prefix(box-shadow, @shadow);
+}
+
+/**
+ * Set box model of element
+ * @type {string} - Box model type
+ */
+.box-sizing(@type: border-box) {
+  .prefix(box-sizing, @type);
+}
+
+/**
+ * Position content
+ * @x {px,%} - x-positioning (-50% to center if target element is positioned left:50%)
+ * @y {px,%} - y-positioning (-50% to center if target element is positioned top:50%)
+ */
+.center(@x,@y) {
+  .prefix(transform, "translateX(@{x}) translateY(@{y})");
+}
+
+.center(@coord) when (@coord = x) {
+  .center(-50%,0);
+  left:50%;
+}
+
+.center(@coord) when (@coord = y) {
+  .center(0,-50%);
+  top:50%;
+}
+
+.center(@coord) when (@coord = both) {
+  .center(-50%,-50%);
+  left:50%;
+  top:50%;
+}
+
+/**
+ * Sets font-size in rem and px-fallback for IE8
+ * @size {px} - Pixel size
+ */
+.font-size(@size) {
+  @rem: (@size / 10);
+  font-size: ~"@{size}px";
+  font-size: ~"@{rem}rem";
+}
+
+/**
+ * Gives element an inner shadow
+ * @shadow {string} - Shadow string
+ */
+.inner-shadow(@shadow: "1px 1px 0px rgba(0,0,0,1)") {
+  .prefix(box-shadow, "inset @{shadow}");
+}
+
+/**
+ * Makes element transparent
+ * @opacity {int} - Opacity in percentage
+ */
+.opacity(@opacity) {
+  opacity: @opacity/100;
+  filter:~"alpha(opacity=@{opacity})";
+}
+
+/**
+ * Add all browser prefixes
+ * @property {string} - What type of property
+ * @value {string, value} - Arguments 
+ */
+.prefix(@property, @value) {
+  -:~";-webkit-@{property}: @{value}; -moz-@{property}: @{value}; -ms-@{property}: @{value}; -o-@{property}: @{value}; @{property}: @{value}";
+}
+
+/**
+ * Positioning helpers
+ * @position {string} - Point to position element from
+ * @top, @right, @bottom, @left {px} - Pixels from start point
+ */
+.position(@position, @top:0, @right:0) when (@position = top-right) {
+  position: absolute;
+  right: @right;
+  top: @top;
+}
+
+.position(@position, @top:0, @left:0) when (@position = top-left) {
+  left: @left;
+  position: absolute;
+  top: @top;
+}
+
+.position(@position, @bottom:0, @left:0) when (@position = bottom-left) {
+  bottom: @bottom;
+  left: @left;
+  position: absolute;
+}
+
+.position(@position, @bottom:0, @right:0) when (@position = bottom-right) {
+  bottom: @bottom;
+  position: absolute;
+  right: @right;
+}
+
+/**
+ * Rotate element
+ * @angle {deg} - Angle in degrees
+ */
+.rotate(@angle) {
+  .prefix("transform", "rotate(@{angle})");
+}
+
+/**
+ * Add row styles
+ */
+.row-style() {
+  .border-radius();
+  background:@box-bg;
+  border:1px solid @border;
+  padding:20px;
+}
+
+/**
+ * Adds text overflow CSS
+ */
+.text-overflow() {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+/**
+ * Make triangles
+ * @direction - Pointing direction
+ * @size {px} - Size of triangle 
+ * @color {hex, rgb} - Color of triangle
+ */
+.triangle-base() {
+  content:"";
+  display:inline-block;
+  height:0;
+  width:0;
+}
+
+.triangle(@direction, @size, @color) when (@direction = up) {
+  .triangle-base;
+  border-left: @size solid transparent;
+  border-right: @size solid transparent;
+  border-bottom: @size solid @color;
+}
+
+.triangle(@direction, @size, @color) when (@direction = right) {
+  .triangle-base;
+  border-top: @size solid transparent;
+  border-bottom: @size solid transparent;
+  border-left: @size solid @color;
+}
+
+.triangle(@direction, @size, @color) when (@direction = down) {
+  .triangle-base;
+  border-left: @size solid transparent;
+  border-right: @size solid transparent;
+  border-top: @size solid @color;
+}
+
+.triangle(@direction, @size, @color) when (@direction = left) {
+  .triangle-base;
+  border-top: @size solid transparent;
+  border-bottom: @size solid transparent;
+  border-right: @size solid @color;
+}
+
+/**
+ * Adds transitions
+ * @type {string} - All or specific selector to transition
+ * @time {s} - Time of transition
+ * @animate {string} - Type of animation
+ */
+.transition(@type: all, @time: 300ms, @animate: ease) {
+  .prefix("transition", @type @time @animate);
+}

@@ -2,4 +2,8 @@
   <google-map center="map.center" zoom="map.zoom" draggable="true" options="map.options">
     <layer namespace="visualization" type="HeatmapLayer" show="map.showHeat" onCreated="map.heatLayerCallback"></layer>
   </google-map>
+  <div class="controls">
+    <input type="checkbox" ng-model="map.showHeat">
+    Show heat
+  </div>
 </div>

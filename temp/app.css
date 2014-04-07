@@ -1,1 +1,1 @@
-html,body{height:100%}body{margin:0;padding:0}[ui-view],#map,google-map,google-map>div{display:block;height:100%}.angular-google-map-container{height:100%}/*# sourceMappingURL=/temp/app.css.map */
+html,body{height:100%}body{margin:0;padding:0}[ui-view],#map,google-map,google-map>div{display:block;height:100%}#map{position:relative}google-map{width:100%}.angular-google-map-container{height:100%}.controls{bottom:0;position:absolute;right:0;background:rgba(0,0,0,0.6);color:#fff;padding:20px}/*# sourceMappingURL=/temp/app.css.map */

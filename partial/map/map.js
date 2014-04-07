@@ -12,11 +12,11 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
     pointArray = new google.maps.MVCArray(data);
     heatLayer.setData(pointArray);
   };
-  
+
   $scope.map = {
     center: {
-      latitude: 59.2124659,
-      longitude: 18.0216075
+      latitude: 59.32893,
+      longitude: 18.06491
     },
     heatLayerCallback: function (layer) {
       var mockHeatLayer = new MockHeatLayer(layer);

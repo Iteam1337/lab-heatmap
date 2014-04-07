@@ -1,8 +1,7 @@
 angular.module('lab-heatmap').service('uppdrag', function () {
   'use strict';
 
-  var uppdrag = 
-  [
+  var uppdrag = [
     {
       'Befattning': 'Kantbockare',
       'Ort': 'Solna',
@@ -67,4 +66,5 @@ angular.module('lab-heatmap').service('uppdrag', function () {
   ];
 
   return uppdrag;
+  
 });
