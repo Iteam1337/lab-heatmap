@@ -17,10 +17,10 @@ describe('MapCtrl', function () {
           latitude: 45,
           longitude: -73
         },
+        heatLayerCallback: sinon.spy(),
+        showHeat: true,
         zoom: 8
       };
-
-      expect(scope.map).to.eql(map)
     });
   })
 });
