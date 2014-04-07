@@ -1,9 +1,12 @@
-angular.module('lab-heatmap', ['ui.router', 'ngResource']);
+angular.module('lab-heatmap', ['ui.router', 'ngResource', 'google-maps']);
 
 angular.module('lab-heatmap').config(function ($stateProvider, $urlRouterProvider) {
   'use strict';
 
-  $stateProvider.state('map', {    url: '/',    templateUrl: 'partial/map/map.html'  });
+  $stateProvider.state('map', {
+    url: '/',
+    templateUrl: 'partial/map/map.html'
+  });
 	/* Add New Routes Above */
   
   // For any unmatched url, redirect to /

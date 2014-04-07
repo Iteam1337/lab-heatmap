@@ -22,8 +22,12 @@ module.exports = function (grunt) {
       options: {
           livereload: true
       },
+      less: {
+        files: ['partial/**/*.less', 'css/*.less'],
+        tasks: ['less']
+      },
       server: {
-        files: ['js/**/*','css/**/*','img/**/*','partial/**/*','service/**/*','filter/**/*','directive/**/*','index.html'],
+        files: ['js/**/*','img/**/*','partial/**/*.html','service/**/*','filter/**/*','directive/**/*','index.html'],
         tasks: []
       },
       test: {
@@ -49,7 +53,8 @@ module.exports = function (grunt) {
       production: {
         options: {
           sourceMap: true,
-          sourceMapRootPath: '/',
+          sourceMapFilename: "temp/app.css.map",
+          sourceMapRootpath: "/",
           compress: true
         },
         files: {
@@ -187,5 +192,5 @@ module.exports = function (grunt) {
   grunt.registerTask('build',['clean:before','less','dom_munger:readcss','dom_munger:readscripts','ngtemplates','cssmin','concat','ngmin','uglify','copy','dom_munger:removecss','dom_munger:addcss','dom_munger:removescripts','dom_munger:addscript','htmlmin','imagemin','clean:after']);
   grunt.registerTask('test',['jshint', 'mocha']);
   grunt.registerTask('server', ['connect', 'watch']);
-  grunt.registerTask('default', ['test', 'server', 'watch']);
+  grunt.registerTask('default', ['test', 'less', 'server', 'watch']);
 };
