@@ -11,16 +11,23 @@ describe('MapCtrl', function () {
   });
 
   describe('#ctor', function() {
-    it('should set a mock map', function () {
+    xit('should set a mock map', function () {
       var map = {
         center: {
           latitude: 45,
           longitude: -73
         },
-        heatLayerCallback: sinon.spy(),
+        heatLayerCallback: function (layer) {
+          var mockHeatLayer = new MockHeatLayer(layer);
+        },
         showHeat: true,
         zoom: 8
       };
+
+      console.log(map);
+      console.log(scope.map);
+
+      expect(scope.map).to.equal(map);
     });
   })
 });
