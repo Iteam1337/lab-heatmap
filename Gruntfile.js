@@ -53,7 +53,8 @@ module.exports = function (grunt) {
       production: {
         options: {
           sourceMap: true,
-          sourceMapBasePath: '/',
+          sourceMapFilename: "temp/app.css.map",
+          sourceMapRootpath: "/",
           compress: true
         },
         files: {
