@@ -40,6 +40,44 @@ describe('MapCtrl', function () {
     it('should get uppdrag from service', function () {
       expect(scope.uppdrag).to.be.an('array');
     });
+
+    it('should set years', function () {
+      expect(scope.years).to.eql(['2014','2015']);
+    });
+
+    it('should add months to years', function () {
+      expect(scope.playRange).to.have.length(24);
+    });
+  });
+
+  describe('#changeData', function() {
+    it('should be a function', function () {
+      expect(scope.changeData).to.be.a('function');
+    });
+  });
+
+  describe('#pause', function() {
+    it('should be a function', function () {
+      expect(scope.pause).to.be.a('function');
+    });
+
+    it('should set playing to false', function () {
+      scope.pause();
+
+      expect(scope.playing).to.be.false;
+    });
+  })
+
+  describe('#play', function() {
+    it('should be a function', function () {
+      expect(scope.play).to.be.a('function');
+    });
+
+    it('should set playing to true', function () {
+      scope.play();
+
+      expect(scope.playing).to.be.true;
+    });
   });
 
   describe('#centerOnJob', function() {

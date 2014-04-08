@@ -60,10 +60,34 @@ angular.module('lab-heatmap').service('uppdrag', function () {
         'Lng': 11.9401409,
       },
       'Aktuell': {
-        'Skapad': '2014-03-01',
-        'Avslutad': '2014-04-20' 
+        'Skapad': '2015-03-01',
+        'Avslutad': '2015-04-20' 
       }
-    },
+    },{
+      'Befattning': 'Programmerare',
+      'Ort': 'Gävle',
+      'Lan': 'Gävleborgs Län',
+      'Position': {
+        'Lat': 60.6667,
+        'Lng': 17.1667,
+      },
+      'Aktuell': {
+        'Skapad': '2014-05-15',
+        'Avslutad': '2014-06-30' 
+      }
+    },{
+      'Befattning': 'Studentsamordnare',
+      'Ort': 'Uppsala',
+      'Lan': 'Uppsala Län',
+      'Position': {
+        'Lat': 59.8667,
+        'Lng': 17.6333,
+      },
+      'Aktuell': {
+        'Skapad': '2014-08-01',
+        'Avslutad': '2014-10-01' 
+      }
+    }
   ];
 
   return uppdrag;
