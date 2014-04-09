@@ -1,12 +1,18 @@
 describe('MapCtrl', function () {
 
-  var scope, ctrl;
+  var scope, ctrl, uppdrag;
 
   beforeEach(function () {
     module('lab-heatmap');
-    inject(function ($rootScope, $controller) {
+    inject(function ($rootScope, $controller, uppdrag) {
       scope = $rootScope.$new();
-      ctrl = $controller('MapCtrl', {$scope: scope});
+
+      uppdrag = uppdrag;
+
+      ctrl = $controller('MapCtrl', {
+        $scope: scope,
+        uppdrag: uppdrag
+      });
     });
   });
 
@@ -48,13 +54,31 @@ describe('MapCtrl', function () {
     it('should add months to years', function () {
       expect(scope.playRange).to.have.length(24);
     });
-  });
 
-  describe('#changeData', function() {
-    it('should be a function', function () {
-      expect(scope.changeData).to.be.a('function');
+    it('should set a starting heat layer', function () {
+      scope.layer = { layer:"layer" };
+      scope.heatLayer = sinon.spy();
+
+      scope.$digest();
+
+      expect(scope.heatLayer.calledOnce).to.be.true;
+      expect(scope.heatLayer.calledWith({ layer:"layer" })).to.be.true;
     });
   });
+  
+  describe('#setPlayData', function() {
+    it('should be a function', function () {
+       expect(scope.setPlayData).to.be.a('function');
+    });
+
+    it('should change data', function () {
+      scope.changeData = sinon.spy();
+
+      scope.setPlayData();
+
+      expect(scope.changeData.calledOnce).to.be.true;
+    }); 
+  })
 
   describe('#pause', function() {
     it('should be a function', function () {
@@ -77,6 +101,53 @@ describe('MapCtrl', function () {
       scope.play();
 
       expect(scope.playing).to.be.true;
+    });
+
+    it('should reset scope increment on play', function () {
+      scope.i = 1337;
+      scope.play();
+
+      expect(scope.i).to.be.null;
+    });
+  });
+
+  describe('#changeData', function() {
+    it('should be a function', function () {
+      expect(scope.changeData).to.be.a('function');
+    });
+
+    it('should make a new heat layer', function () {
+      scope.heatLayer = sinon.spy();
+      scope.uppdrag = [
+        {
+          'Befattning': 'Kantbockare',
+          'Ort': 'Solna',
+          'Lan': 'Stockholms Län',
+          'Position': {
+            'Lat': 59.369468,
+            'Lng': 18.0090972,
+          },
+          'Aktuell': {
+            'Skapad': '2014-01-01',
+            'Avslutad': '2014-02-01' 
+          }
+        },{
+          'Befattning': 'Brandman',
+          'Ort': 'Husby',
+          'Lan': 'Stockholms Län',
+          'Position': {
+            'Lat': 59.408474,
+            'Lng': 17.9246094,
+          },
+          'Aktuell': {
+            'Skapad': '2014-01-01',
+            'Avslutad': '2014-02-01' 
+          } 
+        }];
+
+      scope.changeData('2014-01-01');
+
+      expect(scope.heatLayer.calledOnce).to.be.true;
     });
   });
 

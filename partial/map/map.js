@@ -1,7 +1,7 @@
-angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, $timeout) {
+angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
   'use strict';
 
-  var HeatLayer = function (heatLayer, newData) {
+  $scope.heatLayer = function (heatLayer, newData) {
     var pointArray;
     var data = [];
 
@@ -56,7 +56,7 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, $
 
   $scope.$watch('layer', function (layer) {
     if (!layer) { return; }
-    new HeatLayer(layer);
+    $scope.heatLayer(layer);
   });
 
   $scope.uppdrag = uppdrag;
@@ -116,7 +116,7 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, $
       return range.contains(moment(date));
     });
 
-    new HeatLayer($scope.layer, filtered);
+    $scope.heatLayer($scope.layer, filtered);
   };
 
   $scope.centerOnJob = function (position) {
