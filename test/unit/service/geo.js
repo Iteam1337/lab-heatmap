@@ -1,11 +1,22 @@
 describe('geo', function () {
 
-  var geo;
+  var geo, httpBackend, cities;
 
   beforeEach(function () {
     module('lab-heatmap');
-    inject(function (_geo_) {
+    inject(function (_geo_, $httpBackend) {
       geo = _geo_;
+      httpBackend = $httpBackend;
+
+      cities = [
+        {
+          name: 'Stockholm'
+        }
+      ];
+
+      httpBackend
+        .whenGET('http://ilix.se:1337/location/Umeå')
+        .respond(200, cities);
     });
   });
 
@@ -15,8 +26,10 @@ describe('geo', function () {
 
   it('can lookup Umeå', function () {
     var loc = geo.Lookup('Umeå');
-    console.log(geo.Lookup('Umeå'));
-    //expect(geo.Lookup('Umeå')).to.be.an('object');
+
+    httpBackend.flush();
+
+    expect(loc).to.be.an('object');
   });
 
 });
