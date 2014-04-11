@@ -6,10 +6,10 @@ angular.module('lab-heatmap').service('geo', function ($http, CONFIG) {
 
   this.Lookup = function (city) {
     var cities = $http.get(locationsUrl.replace('{location}', city))
-      .success(function (data, status, headers, config) {
+      .success(function (data) {
         return data[0];
       })
-      .error(function (data, status, headers, config) {
+      .error(function (data) {
         console.log('Unable to load location!', data);
         return {};
       });
