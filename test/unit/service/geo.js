@@ -9,8 +9,14 @@ describe('geo', function () {
     });
   });
 
-  xit('should have tests', function () {
-    //expect(geo.doSomething()).to.equal('something');
+  it('should have a Lookup function', function () {
+    expect(geo.Lookup).to.be.a('function');
+  });
+
+  it('can lookup Umeå', function () {
+    var loc = geo.Lookup('Umeå');
+    console.log(geo.Lookup('Umeå'));
+    //expect(geo.Lookup('Umeå')).to.be.an('object');
   });
 
 });

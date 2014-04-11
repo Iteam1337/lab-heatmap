@@ -1,4 +1,4 @@
-angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
+angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo) {
   'use strict';
 
   $scope.heatLayer = function (heatLayer, newData) {

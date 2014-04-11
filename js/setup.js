@@ -1,4 +1,6 @@
-angular.module('lab-heatmap', ['ui.router', 'ngResource', 'google-maps']);
+angular.module('lab-heatmap', ['ui.router', 'ngResource', 'google-maps']).constant('CONFIG', {
+  geoApiUrl: 'http://ilix.se:1337/'
+});
 
 angular.module('lab-heatmap').config(function ($stateProvider, $urlRouterProvider) {
   'use strict';
