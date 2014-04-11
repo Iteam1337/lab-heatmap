@@ -10,7 +10,7 @@ describe('geo', function () {
 
       cities = [
         {
-          name: 'Stockholm'
+          city: 'Stockholm'
         }
       ];
 
@@ -24,12 +24,12 @@ describe('geo', function () {
     expect(geo.Lookup).to.be.a('function');
   });
 
-  it('can lookup Umeå', function () {
+  it('can lookup Umeå and returns a promise', function () {
     var loc = geo.Lookup('Umeå');
 
     httpBackend.flush();
 
-    expect(loc).to.be.an('object');
+    expect(loc).to.be.an('object').with.keys(['then','catch','finally']);
   });
 
 });
