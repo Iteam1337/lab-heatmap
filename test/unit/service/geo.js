@@ -15,7 +15,7 @@ describe('geo', function () {
       ];
 
       httpBackend
-        .whenGET('http://ilix.se:1337/location/Umeå')
+        .whenGET('http://ilix.se:1337/location/Stockholm')
         .respond(200, cities);
     });
   });
@@ -25,7 +25,7 @@ describe('geo', function () {
   });
 
   it('can lookup Umeå', function () {
-    var loc = geo.Lookup('Umeå');
+    var loc = geo.Lookup('Stockholm');
 
     httpBackend.flush();
 
