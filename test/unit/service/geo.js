@@ -26,6 +26,8 @@ describe('geo', function () {
 
   it('can lookup Umeå', function () {
     var loc = geo.Lookup('Stockholm');
+  });
+
   it('can lookup Umeå and returns a promise', function () {
     var loc = geo.Lookup('Umeå');
 

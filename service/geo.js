@@ -1,7 +1,8 @@
 angular.module('lab-heatmap').service('geo', function ($http, CONFIG) {
   'use strict';
 
-  var locationsUrl = CONFIG.geoApiUrl + 'location/{location}';
+  var locationsUrl;
+  locationsUrl = CONFIG.geoApiUrl + 'location/{location}';
 
   this.Lookup = function (city) {
     var promise = $http
@@ -29,6 +30,7 @@ angular.module('lab-heatmap').service('geo', function ($http, CONFIG) {
              position.Lat = data[0].latitude;
              position.Lng = data[0].longitude;
              uppdrag.Position = position;
+             console.log(uppdrag.Ort, position);
            }
         });
       })
