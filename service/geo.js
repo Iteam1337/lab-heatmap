@@ -1,8 +1,7 @@
 angular.module('lab-heatmap').service('geo', function ($http, CONFIG) {
   'use strict';
 
-  var locationsUrl;
-  locationsUrl = CONFIG.geoApiUrl + 'location/{location}';
+  var locationsUrl = CONFIG.geoApiUrl + 'location/{location}';
 
   this.Lookup = function (city) {
     var promise = $http

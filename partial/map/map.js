@@ -123,4 +123,8 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
     $scope.map.center = { latitude: position.Lat, longitude: position.Lng };
   };
 
+  geo.Lookup('Stockholm').then(function (data) {
+    console.log(data);
+  });
+
 });
