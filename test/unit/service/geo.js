@@ -24,12 +24,12 @@ describe('geo', function () {
     expect(geo.Lookup).to.be.a('function');
   });
 
-  it('can lookup Umeå', function () {
+  it('can lookup Stockholm', function () {
     var loc = geo.Lookup('Stockholm');
   });
 
-  it('can lookup Umeå and returns a promise', function () {
-    var loc = geo.Lookup('Umeå');
+  it('can lookup Stockholm and returns a promise', function () {
+    var loc = geo.Lookup('Stockholm');
 
     httpBackend.flush();
 

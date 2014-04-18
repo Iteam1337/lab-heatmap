@@ -1,18 +1,29 @@
 describe('MapCtrl', function () {
 
-  var scope, ctrl, uppdrag;
+  var scope, ctrl, uppdrag, httpBackend, cities;
 
   beforeEach(function () {
     module('lab-heatmap');
-    inject(function ($rootScope, $controller, uppdrag) {
+    inject(function ($rootScope, $controller, $httpBackend, uppdrag) {
       scope = $rootScope.$new();
+      httpBackend = $httpBackend;
 
       uppdrag = uppdrag;
+
+      cities = [
+        {
+          city: 'Solna'
+        }
+      ];
 
       ctrl = $controller('MapCtrl', {
         $scope: scope,
         uppdrag: uppdrag
       });
+
+      httpBackend
+        .whenGET(/http:\/\/[a-z.:0-9]*\/location\/[a-zA-Z]*/)
+        .respond(200, cities);
     });
   });
 
