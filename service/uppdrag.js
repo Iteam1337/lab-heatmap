@@ -2,15 +2,22 @@ angular.module('lab-heatmap').service('uppdrag', function (staticUppdrag, geo) {
   
   'use strict';
 
-  var uppdrag = staticUppdrag;
+  var uppdrag = {};
 
-  function setCoordinates() {
-    uppdrag.map(function (u){
-      geo.PositionUppdrag(u);
+  uppdrag.items = [];
+  uppdrag.sourceItems = staticUppdrag;
+
+  function loadUppdrag() {
+    uppdrag.sourceItems.map(function (uppdragItem){
+      geo.Lookup(uppdragItem.Ort).then(function (data) {
+        uppdragItem.Position.Lat = data.latitude;
+        uppdragItem.Position.Lng = data.longitude;
+        uppdrag.items.push(uppdragItem);
+      });
     });
   }
 
-  setCoordinates();
+  loadUppdrag();
 
   return uppdrag;
 

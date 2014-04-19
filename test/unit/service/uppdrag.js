@@ -10,7 +10,7 @@ describe('uppdrag', function () {
   });
 
   it('should return an object', function () {
-    expect(uppdrag).to.be.an('array');
+    expect(uppdrag.items).to.be.an('array');
   });
 
   it('an uppdrag should have certain properties', function () {
@@ -22,15 +22,15 @@ describe('uppdrag', function () {
       'Aktuell'
     ];
 
-    expect(uppdrag[0]).to.be.an('object').with.keys(keys);
+    expect(uppdrag.sourceItems[0]).to.be.an('object').with.keys(keys);
   });
 
   it('an uppdrag should contain longitude and latitude', function () {
-    expect(uppdrag[0].Position).to.be.an('object').with.keys(['Lat','Lng']);
+    expect(uppdrag.sourceItems[0].Position).to.be.an('object').with.keys(['Lat','Lng']);
   });
 
   it('an uppdrag should contain two dates', function () {
-    expect(uppdrag[0].Aktuell).to.be.an('object').with.keys(['Skapad', 'Avslutad']);
+    expect(uppdrag.sourceItems[0].Aktuell).to.be.an('object').with.keys(['Skapad', 'Avslutad']);
   });
 
 });

@@ -55,7 +55,7 @@ describe('MapCtrl', function () {
     });
 
     it('should get uppdrag from service', function () {
-      expect(scope.uppdrag).to.be.an('array');
+      expect(scope.uppdrag.items).to.be.an('array');
     });
 
     it('should set years', function () {
@@ -129,7 +129,7 @@ describe('MapCtrl', function () {
 
     it('should make a new heat layer', function () {
       scope.heatLayer = sinon.spy();
-      scope.uppdrag = [
+      scope.uppdrag.items = [
         {
           'Befattning': 'Kantbockare',
           'Ort': 'Solna',
