@@ -1,18 +1,29 @@
 describe('MapCtrl', function () {
 
-  var scope, ctrl, uppdrag;
+  var scope, ctrl, uppdrag, httpBackend, cities;
 
   beforeEach(function () {
     module('lab-heatmap');
-    inject(function ($rootScope, $controller, uppdrag) {
+    inject(function ($rootScope, $controller, $httpBackend, uppdrag) {
       scope = $rootScope.$new();
+      httpBackend = $httpBackend;
 
       uppdrag = uppdrag;
+
+      cities = [
+        {
+          city: 'Solna'
+        }
+      ];
 
       ctrl = $controller('MapCtrl', {
         $scope: scope,
         uppdrag: uppdrag
       });
+
+      httpBackend
+        .whenGET(/http:\/\/[a-z.:0-9]*\/location\/[a-zA-Z]*/)
+        .respond(200, cities);
     });
   });
 
@@ -44,7 +55,7 @@ describe('MapCtrl', function () {
     });
 
     it('should get uppdrag from service', function () {
-      expect(scope.uppdrag).to.be.an('array');
+      expect(scope.uppdrag.items).to.be.an('array');
     });
 
     it('should set years', function () {
@@ -118,7 +129,7 @@ describe('MapCtrl', function () {
 
     it('should make a new heat layer', function () {
       scope.heatLayer = sinon.spy();
-      scope.uppdrag = [
+      scope.uppdrag.items = [
         {
           'Befattning': 'Kantbockare',
           'Ort': 'Solna',

@@ -1,4 +1,4 @@
-angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
+angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo, TRRUppdrag) {
   'use strict';
 
   $scope.heatLayer = function (heatLayer, newData) {
@@ -6,12 +6,16 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
     var data = [];
 
     if (!newData) {
-      uppdrag.map(function (upp) {
-        data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
+      uppdrag.items.map(function (upp) {
+        if (!!upp.Position.Lng) {
+          data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
+        }
       });
     } else {
       newData.map(function (upp) {
-        data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
+        if (!!upp.Position.Lng) {
+          data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
+        }
       });
     }
 
@@ -86,7 +90,7 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
       $scope.currentMonth = null;
       $scope.playing = false;
       $scope.i = null;
-      
+
       $scope.$apply();
     }
   };
@@ -111,7 +115,7 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
   };
 
   $scope.changeData = function (date) {
-    var filtered = uppdrag.filter(function (a) {
+    var filtered = uppdrag.items.filter(function (a) {
       range = moment().range(a.Aktuell.Skapad, a.Aktuell.Avslutad);
       return range.contains(moment(date));
     });
@@ -123,4 +127,5 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag) {
     $scope.map.center = { latitude: position.Lat, longitude: position.Lng };
   };
 
+  TRRUppdrag.GetUppdrag();
 });
