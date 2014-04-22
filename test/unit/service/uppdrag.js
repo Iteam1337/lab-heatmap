@@ -33,4 +33,14 @@ describe('uppdrag', function () {
     expect(uppdrag[0].Aktuell).to.be.an('object').with.keys(['Skapad', 'Avslutad']);
   });
 
+  it('should have a get trr uppdrag function', function () {
+    expect(uppdrag.GetTRRUppdrag).to.be.a('function');
+  });
+
+  /*it('get trr uppdrag function returns an array', function () {
+    var trrUppdrag = uppdrag.GetTRRUppdrag();
+    expect(trrUppdrag).to.be.an('array');
+  });*/
+
+
 });

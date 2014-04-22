@@ -1,6 +1,17 @@
-angular.module('lab-heatmap').service('uppdrag', function () {
+angular.module('lab-heatmap').service('uppdrag', function ($http, CONFIG) {
   
   'use strict';
+
+  var trrUppdragUrl = 'http://trr-rest-api/uppdrag';
+  var trrPostdata = {
+    "Uppdragsstatus":["Aktiv"],
+    "Lan":[],
+    "AnsvarigKontaktPersonAnstalldId":"",
+    "OrderBy":"SenastAndradDatum",
+    "Descending":true,  
+    "Take":"20000",
+    "Skip":"0"
+  };
 
   var uppdrag = [
     {
@@ -73,7 +84,7 @@ angular.module('lab-heatmap').service('uppdrag', function () {
       },
       'Aktuell': {
         'Skapad': '2014-05-15',
-        'Avslutad': '2014-06-30' 
+        'Avslutad': '2014-06-30'
       }
     },{
       'Befattning': 'Studentsamordnare',
@@ -89,6 +100,17 @@ angular.module('lab-heatmap').service('uppdrag', function () {
       }
     }
   ];
+
+  uppdrag.GetTRRUppdrag = function () {
+
+	$http({method: 'POST', url: trrUppdragUrl, data: trrPostdata}).
+		success(function(data, status, headers, config) {
+		console.log("Antal uppdrag " + data.length);
+	}).
+		error(function(data, status, headers, config) {
+		console.log("Getting TRR Uppdrag failed.");
+	});
+  };
 
   return uppdrag;
 
