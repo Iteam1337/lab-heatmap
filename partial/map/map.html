@@ -6,7 +6,7 @@
     <input type="text" id="search" ng-model="search" placeholder="Search">
     <div class="options" ng-click="map.showHeat = !map.showHeat" ng-class="{'heat-is-on':map.showHeat}">Show heat</div>
     <ul>
-      <li ng-repeat="job in uppdrag.items | filter:search" ng-click="centerOnJob(job.Position)">
+      <li ng-repeat="job in uppdrag.items | filter:search" ng-click="centerOnJob(job)">
         {{ job.Befattning }}
         <div class="city">{{ job.Ort }}, {{ job.Lan }}</div>
       </li>

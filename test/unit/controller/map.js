@@ -33,8 +33,8 @@ describe('MapCtrl', function () {
     });
 
     it('should be centered on Stockholm', function () {
-      expect(scope.map.center.latitude).to.eql(59.32893);
-      expect(scope.map.center.longitude).to.eql(18.06491);
+      expect(scope.map.center.latitude).to.eql(62.3875);
+      expect(scope.map.center.longitude).to.eql(16.325556);
     });
 
     it('should contain styles in the options', function () {
@@ -43,7 +43,7 @@ describe('MapCtrl', function () {
     });
 
     it('should be zoomed to a certain level', function () {
-      expect(scope.map.zoom).to.eql(8);
+      expect(scope.map.zoom).to.eql(5);
     });
 
     it('should have heat layer turned on', function () {
@@ -163,15 +163,26 @@ describe('MapCtrl', function () {
   });
 
   describe('#centerOnJob', function() {
+
+    beforeEach(function () {
+      scope.heatLayer = sinon.spy();
+    });
+
     it('should be a function', function () {
       expect(scope.centerOnJob).to.be.a('function');
     });
 
     it('should move the maps center point', function () {
-      scope.centerOnJob({Lat:60,Lng:20});
+      scope.centerOnJob({Position: {Lat:60,Lng:20}});
 
       expect(scope.map.center.latitude).to.eql(60);
       expect(scope.map.center.longitude).to.eql(20);
+    });
+
+    it('should set the heat layer with the selected point', function () {
+      scope.centerOnJob({Position: {Lat:60,Lng:20}});
+
+      expect(scope.heatLayer.calledOnce).to.be.true;
     });
   });
 
