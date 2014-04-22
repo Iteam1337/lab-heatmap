@@ -1,4 +1,4 @@
-angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo) {
+angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo, TRRUppdrag) {
   'use strict';
 
   $scope.heatLayer = function (heatLayer, newData) {
@@ -133,4 +133,5 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
     $scope.heatLayer($scope.layer, jobs);
   };
 
+  TRRUppdrag.GetUppdrag();
 });
