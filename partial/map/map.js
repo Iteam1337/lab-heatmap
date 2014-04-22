@@ -1,6 +1,11 @@
 angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo, TRRUppdrag) {
   'use strict';
 
+  var center = {
+     latitude: 62.3875,
+    longitude: 16.325556 
+  };
+
   $scope.heatLayer = function (heatLayer, newData) {
     var pointArray;
     var data = [];
@@ -24,15 +29,12 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
   };
 
   $scope.map = {
-    center: {
-      latitude: 59.32893,
-      longitude: 18.06491
-    },
+    center: center,
     heatLayerCallback: function (layer) {
       $scope.layer = layer;
     },
     showHeat: true,
-    zoom: 8,
+    zoom: 5,
     options: {
       styles: [
         {
@@ -123,8 +125,19 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
     $scope.heatLayer($scope.layer, filtered);
   };
 
-  $scope.centerOnJob = function (position) {
-    $scope.map.center = { latitude: position.Lat, longitude: position.Lng };
+  $scope.reset = function () {
+    $scope.heatLayer($scope.layer);
+    $scope.map.center = center;
+  };
+
+  $scope.centerOnJob = function (job) {
+    $scope.map.center = { latitude: job.Position.Lat, longitude: job.Position.Lng };
+
+    var jobs = [];
+
+    jobs.push(job);
+
+    $scope.heatLayer($scope.layer, jobs);
   };
 
   TRRUppdrag.GetUppdrag();  

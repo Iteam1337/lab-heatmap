@@ -6,15 +6,18 @@
     <input type="text" id="search" ng-model="search" placeholder="Search">
     <div class="options" ng-click="map.showHeat = !map.showHeat" ng-class="{'heat-is-on':map.showHeat}">Show heat</div>
     <ul>
-      <li ng-repeat="job in uppdrag.items | filter:search" ng-click="centerOnJob(job.Position)">
+      <li ng-repeat="job in uppdrag.items | filter:search" ng-click="centerOnJob(job)">
         {{ job.Befattning }}
         <div class="city">{{ job.Ort }}, {{ job.Lan }}</div>
       </li>
       <li class="results">{{ uppdrag.items.length }} uppdrag</li>
     </ul>
-    <div class="play-wrap">
-      <div class="play" ng-click="play()" ng-if="!playing">Play</div>
-      <div class="play" ng-click="pause()" ng-if="!!playing">Pause</div>
+    <div class="btn-wrap">
+      <div class="btn" ng-click="reset()">
+        Reset
+      </div>
+      <div class="btn" ng-click="play()" ng-if="!playing">Play</div>
+      <div class="btn" ng-click="pause()" ng-if="!!playing">Pause</div>
       <div class="month">{{ currentMonth }}</div>
     </div>
   </div>

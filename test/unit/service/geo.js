@@ -15,7 +15,7 @@ describe('geo', function () {
       ];
 
       httpBackend
-        .whenGET('http://ilix.se:1337/location/Stockholm')
+        .whenGET('http://snowflake.ilix.se:1337/location/Stockholm')
         .respond(200, cities);
     });
   });

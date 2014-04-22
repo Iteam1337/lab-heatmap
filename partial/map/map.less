@@ -87,19 +87,23 @@ google-map {
   }
 }
 
-.play-wrap {
+.btn {
+  background:@blue;
+  color:#fff;
+  cursor:pointer;
+  padding:10px;
+  text-align:center;
+
+  &:hover {
+    background:lighten(@blue, 20%);
+  }
+}
+
+.btn-wrap {
   padding:20px;
 
-  .play {
-    background:@blue;
-    color:#fff;
-    cursor:pointer;
-    padding:10px;
-    text-align:center;
-
-    &:hover {
-      background:lighten(@blue, 20%);
-    }
+  div:first-of-type {
+    margin-bottom:10px;
   }
 
   .month {
