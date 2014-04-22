@@ -24,6 +24,10 @@ describe('MapCtrl', function () {
       httpBackend
         .whenGET(/http:\/\/[a-z.:0-9]*\/location\/[a-zA-Z]*/)
         .respond(200, cities);
+
+      httpBackend
+        .whenPOST('http://trr-rest-api/uppdrag')
+        .respond(200, {success:true});
     });
   });
 
@@ -185,5 +189,18 @@ describe('MapCtrl', function () {
       expect(scope.heatLayer.calledOnce).to.be.true;
     });
   });
+
+  describe('#reset', function() {
+    it('should be a function', function () {
+      expect(scope.reset).to.be.a('function');
+    });
+
+    it('should reset the heat layer to the initial', function () {
+      scope.heatLayer = sinon.spy();
+      scope.reset();
+
+      expect(scope.heatLayer.calledOnce).to.be.true;
+    });
+  })
 
 });

@@ -1,6 +1,11 @@
 angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo, TRRUppdrag) {
   'use strict';
 
+  var center = {
+     latitude: 62.3875,
+    longitude: 16.325556 
+  };
+
   $scope.heatLayer = function (heatLayer, newData) {
     var pointArray;
     var data = [];
@@ -24,10 +29,7 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
   };
 
   $scope.map = {
-    center: {
-      latitude: 62.3875,
-      longitude: 16.325556
-    },
+    center: center,
     heatLayerCallback: function (layer) {
       $scope.layer = layer;
     },
@@ -121,6 +123,11 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
     });
 
     $scope.heatLayer($scope.layer, filtered);
+  };
+
+  $scope.reset = function () {
+    $scope.heatLayer($scope.layer);
+    $scope.map.center = center;
   };
 
   $scope.centerOnJob = function (job) {

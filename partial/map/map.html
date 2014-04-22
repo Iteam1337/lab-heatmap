@@ -12,9 +12,12 @@
       </li>
       <li class="results">{{ uppdrag.items.length }} uppdrag</li>
     </ul>
-    <div class="play-wrap">
-      <div class="play" ng-click="play()" ng-if="!playing">Play</div>
-      <div class="play" ng-click="pause()" ng-if="!!playing">Pause</div>
+    <div class="btn-wrap">
+      <div class="btn" ng-click="reset()">
+        Reset
+      </div>
+      <div class="btn" ng-click="play()" ng-if="!playing">Play</div>
+      <div class="btn" ng-click="pause()" ng-if="!!playing">Pause</div>
       <div class="month">{{ currentMonth }}</div>
     </div>
   </div>
