@@ -1,4 +1,4 @@
-angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo, TRRUppdrag) {
+angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, TRRUppdrag) {
   'use strict';
 
   var center = {
@@ -128,6 +128,8 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
   $scope.reset = function () {
     $scope.heatLayer($scope.layer);
     $scope.map.center = center;
+
+    // TODO: Also reset play timer?
   };
 
   $scope.centerOnJob = function (job) {
@@ -140,5 +142,5 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
     $scope.heatLayer($scope.layer, jobs);
   };
 
-  TRRUppdrag.GetUppdrag();  
+  console.log(TRRUppdrag.GetUppdrag());  
 });

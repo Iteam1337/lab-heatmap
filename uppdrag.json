@@ -1,0 +1,2067 @@
+{
+Pagination: {
+TotalCount: 247
+},
+Uppdrag: [
+{
+Id: 22239,
+Rubrik: "Alexander",
+Anstallningsform: "Heltid",
+Arbetsort: "Tensta",
+ArbetsutbudFran: 100,
+ArbetsutbudTill: 100,
+AlderFran: 0,
+AlderTill: 100,
+TjanstBeskrivning: "Beskrivning",
+Lopnummer: 8336,
+SkapadAv: "ITEAM",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "?",
+Grovsallningsvillkor: "",
+Tjanst: "TEST: uppdrag should log changes to its status.",
+Kvalifikationer: "Du ska vara bra.",
+SenastAndradDatum: "2014-04-28T10:56:17.677",
+SkapadDatum: "2014-04-28T08:56:12.253",
+SistaAnsokanDatum: "2014-07-28T08:56:12.253",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-10-28T09:56:12.253",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Annons",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "TRR",
+ForetagId: "88705",
+ForetagsNamn: "Norrmejerier ek för",
+ForetagsBeskrivning: "Meow",
+KontaktpersonId: 5860,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 22239,
+Nulagetyp: "Ny",
+UppdragHosRolltyp: "Jobbkontakt",
+Tillhorighet: "TRR"
+},
+NulageString: "Ansvarig matchar",
+ExterntId: "3ed74373-4e68-4800-83b4-a2dca7c5971a",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: null,
+UtvaldaKlienter: null,
+UppdragFran: "?"
+},
+{
+Id: 21805,
+Rubrik: "",
+Anstallningsform: "Heltid",
+Arbetsort: "Gävle",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 0,
+AlderTill: 100,
+TjanstBeskrivning: "om befattningen",
+Lopnummer: 8226,
+SkapadAv: "BEAS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "?",
+Grovsallningsvillkor: "",
+Tjanst: "Lokalvårdare",
+Kvalifikationer: "din profil",
+SenastAndradDatum: "2014-04-25T11:23:18.027",
+SkapadDatum: "2014-04-14T14:10:07.273",
+SistaAnsokanDatum: "2014-04-30T00:00:00",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: null,
+BevakningsDatum: "2014-04-15T00:00:00",
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Annons",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Startkraft",
+ForetagId: "123133",
+ForetagsNamn: "Samhall AB",
+ForetagsBeskrivning: "om företaget",
+KontaktpersonId: 107631,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21805,
+Nulagetyp: "AnsokanSkickadTillKund",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: "Startkraft"
+},
+NulageString: "Kund har fått leverans",
+ExterntId: "94841ccf-69ff-4249-9063-24e27e36dc8d",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "ansökningar sker löpande",
+UtvaldaKlienter: null,
+UppdragFran: "EWCA"
+},
+{
+Id: 21685,
+Rubrik: "",
+Anstallningsform: "Heltid",
+Arbetsort: "-",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 0,
+AlderTill: 100,
+TjanstBeskrivning: "-",
+Lopnummer: 8113,
+SkapadAv: "ITEAM",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "?",
+Grovsallningsvillkor: "",
+Tjanst: "Kattritare",
+Kvalifikationer: "-",
+SenastAndradDatum: "2014-04-22T15:25:12.893",
+SkapadDatum: "2014-04-02T10:16:20.24",
+SistaAnsokanDatum: "2014-04-23T00:00:00",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: null,
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Annons",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "TRR",
+ForetagId: "35391",
+ForetagsNamn: "ITAB Scanflow AB",
+ForetagsBeskrivning: "-",
+KontaktpersonId: 107630,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21685,
+Nulagetyp: "AnsokanSkickadTillKund",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: "TRR"
+},
+NulageString: "Kund har fått leverans",
+ExterntId: "164ebf60-df5f-46d2-bace-2c2421418b5a",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: null,
+UtvaldaKlienter: null,
+UppdragFran: "?"
+},
+{
+Id: 21772,
+Rubrik: "Alexander",
+Anstallningsform: "Heltid",
+Arbetsort: "Tensta",
+ArbetsutbudFran: 100,
+ArbetsutbudTill: 100,
+AlderFran: 0,
+AlderTill: 100,
+TjanstBeskrivning: "Beskrivning",
+Lopnummer: 8193,
+SkapadAv: "ITEAM",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "?",
+Grovsallningsvillkor: "",
+Tjanst: "Den bästa tjänsten",
+Kvalifikationer: "Du ska vara bra.",
+SenastAndradDatum: "2014-04-17T15:33:17.027",
+SkapadDatum: "2014-04-10T05:08:43.477",
+SistaAnsokanDatum: "2014-07-10T00:00:00",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-10-10T05:08:43.477",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Annons",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "TRR",
+ForetagId: "88705",
+ForetagsNamn: "Norrmejerier ek för",
+ForetagsBeskrivning: "Meow",
+KontaktpersonId: 5860,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21772,
+Nulagetyp: "AnsokanSkapad",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: "TRR"
+},
+NulageString: "Ansvarig har/tar emot ansökningar",
+ExterntId: "735cd2cc-a2b0-42af-bf00-9354824795c2",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: null,
+UtvaldaKlienter: null,
+UppdragFran: "?"
+},
+{
+Id: 21733,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: "s",
+Lopnummer: 8158,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: "s",
+SenastAndradDatum: "2014-04-16T17:23:00.243",
+SkapadDatum: "2014-04-09T10:30:18.017",
+SistaAnsokanDatum: "2014-05-09T00:00:00",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:30:18.017",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: "s",
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21733,
+Nulagetyp: "AnsokanSkapad",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: null
+},
+NulageString: "Ansvarig har/tar emot ansökningar",
+ExterntId: "837fb1c5-5d95-4534-af22-4d4aff82ffc1",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21555,
+Rubrik: "",
+Anstallningsform: "Heltid",
+Arbetsort: "Helsingborg",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 0,
+AlderTill: 100,
+TjanstBeskrivning: "Receptionsarbete; orderregistrering, telefonsamtal, posthantering, fakturering, ordning och reda i kök och show room, vissa inköp, hotellbokningar.",
+Lopnummer: 7984,
+SkapadAv: "HOAN",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "?",
+Grovsallningsvillkor: "",
+Tjanst: "Receptionist",
+Kvalifikationer: "Gärna detaljhandelserfarenhet, noggrann, stresstålig, van vid att prata med kunder i telefon, lätt för att skapa kontakter. Tidigare arbete i modebranschen är meriterande. Duktig på hela office paketet (särskilt excel och word) samt gärna affärssystemet Axapta Svenska och engelska flytande i tal och skrift, förståelse för danska och norska och gärna tyska. Social kompetens, flexibel och inte rädd för att hugga i. Tycker om ordning och reda och att ge service.",
+SenastAndradDatum: "2014-04-15T06:23:45.557",
+SkapadDatum: "2014-03-11T14:34:08.157",
+SistaAnsokanDatum: "2014-04-30T00:00:00",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: null,
+BevakningsDatum: "2014-04-28T00:00:00",
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Annons",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "TRR",
+ForetagId: "9636",
+ForetagsNamn: "AB Stenströms Skjortfabrik",
+ForetagsBeskrivning: "www.stenstroms.com",
+KontaktpersonId: 107439,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21555,
+Nulagetyp: "KandidatTipsad",
+UppdragHosRolltyp: "Kandidat",
+Tillhorighet: "TRR"
+},
+NulageString: "Kandidater tipsade",
+ExterntId: "c20dc078-5942-40cd-b980-b73ae452b6dd",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Vikariat, heltid, inledningsvis ca 1 år. Ansökan senast 31/3 till Anette Lundberg anette.lundberg@stenstroms.com",
+UtvaldaKlienter: null,
+UppdragFran: "?"
+},
+{
+Id: 21598,
+Rubrik: "",
+Anstallningsform: "Heltid",
+Arbetsort: "Lund",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 0,
+AlderTill: 100,
+TjanstBeskrivning: "Arbeta i ett team som levererar IaaS, PaaS och SaaS till våra interna och externa kunder. Arbetet innebär att ta ett helhetsansvaransvar för avdelningens leveranser, allt från installation, konfiguration, dokumentation, monitorering och backup till uppgradering, support, felsökning etc. I arbetet ingår också att kommunicera med kunder och leverantörer, initiera och leda projekt samt att aktivt jobba för att skapa och förbättra rutiner och processer. badankaaan",
+Lopnummer: 8027,
+SkapadAv: "HOAN",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "?",
+Grovsallningsvillkor: "",
+Tjanst: "IT driftstekniker",
+Kvalifikationer: "Eftergymnasial IT-utbildning. •Minst 5 års erfarenhet av IT-Drift •Bred kompetens kring IT, med erfarenhet av server och nätverk •Erfarenhet av design och implementering av IT-infrastruktur •Utbildning i Windows server 2008/2012 och Linux. •Kunskap om Active Directory •Kunskaper i Databas, Oracle och SQL Server •Kunskaper inom nätverk, Cisco och HP •Erfarenhet av Cloud Computing •Erfarenhet av ITIL •Erfarenhet av monitorering och monitoreringsverktyg (OP5, Nagios eller likn.) •Scriptingkunskap i Linuxmiljö •Erfarenhet av att leda projekt •God förmåga att dokumentera på svenska och engelska •Meriterande med erfarenhet av Liferay Svenska, engelska Är en lagspelare som gillar att jobba en öppen och generös miljö. Erfarenhet och/eller intresser för kultursektorn är viktigt. Kan också ha jobbat inom media eller liknande områden",
+SenastAndradDatum: "2014-04-14T19:26:06.76",
+SkapadDatum: "2014-03-18T08:16:51.923",
+SistaAnsokanDatum: "2014-03-28T00:00:00",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: null,
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Annons",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "TRR",
+ForetagId: "310322",
+ForetagsNamn: "Axiell Group AB",
+ForetagsBeskrivning: "Axiell Group AB. www.axiell.com Evt frågor besvaras av IT-chef Jan-Åke Holmberg, 046-27 00 411",
+KontaktpersonId: 107539,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21598,
+Nulagetyp: "KandidatTipsad",
+UppdragHosRolltyp: "Kandidat",
+Tillhorighet: "TRR"
+},
+NulageString: "Kandidater tipsade",
+ExterntId: "b7e55d4c-c099-452a-ac5b-69a4c1f8d6e3",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Evt frågor besvaras av IT-chef Jan-Åke Holmberg, 046-27 00 411 Ansökan senast 28/3 via jh@axiell.com",
+UtvaldaKlienter: null,
+UppdragFran: "?"
+},
+{
+Id: 21682,
+Rubrik: "",
+Anstallningsform: "Heltid",
+Arbetsort: "Göteborg",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 0,
+AlderTill: 100,
+TjanstBeskrivning: "Adecco söker för kunds räkning en redovisningsekonom med anställning ute hos kunden. Till ett företag i expansivt skede och idagsläget är det 3 personer på deras ekonomiavdelning. Du sköter bl a månadsavstämningar, momsredovisning samt bokslut.",
+Lopnummer: 8110,
+SkapadAv: "MLN",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "?",
+Grovsallningsvillkor: "",
+Tjanst: "Meka på Volvo",
+Kvalifikationer: "Profilen",
+SenastAndradDatum: "2014-04-09T16:40:42.607",
+SkapadDatum: "2014-04-02T08:48:33.053",
+SistaAnsokanDatum: "2014-05-29T00:00:00",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: null,
+BevakningsDatum: null,
+Uppdragspaket: "Fullservice",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Annons",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "101766",
+ForetagsNamn: "Volvo Personbilar Sverige AB",
+ForetagsBeskrivning: "FTG",
+KontaktpersonId: 78036,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21682,
+Nulagetyp: "KandidatPassande",
+UppdragHosRolltyp: "Radgivare",
+Tillhorighet: null
+},
+NulageString: "Rådgivare hanterar",
+ExterntId: "1b827b07-7be7-4344-826f-2f5b705f6d22",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "",
+UtvaldaKlienter: null,
+UppdragFran: "ACR"
+},
+{
+Id: 21746,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8171,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:31:55.87",
+SkapadDatum: "2014-04-09T10:31:55.87",
+SistaAnsokanDatum: "2014-05-09T10:31:55.87",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:31:55.87",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21746,
+Nulagetyp: "AnsokanSkickadTillKund",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: null
+},
+NulageString: "Kund har fått leverans",
+ExterntId: "833a9a26-b0d7-4276-9668-d6282502c7e0",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21745,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8170,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:31:33.03",
+SkapadDatum: "2014-04-09T10:31:33.03",
+SistaAnsokanDatum: "2014-05-09T10:31:33.03",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:31:33.03",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21745,
+Nulagetyp: "Ny",
+UppdragHosRolltyp: "Jobbkontakt",
+Tillhorighet: null
+},
+NulageString: "Ansvarig matchar",
+ExterntId: "e2385269-4009-4b8b-a78b-e335655d0868",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21743,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8168,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:31:30.063",
+SkapadDatum: "2014-04-09T10:31:30.063",
+SistaAnsokanDatum: "2014-05-09T10:31:30.063",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:31:30.063",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21743,
+Nulagetyp: "KandidatPassande",
+UppdragHosRolltyp: "Radgivare",
+Tillhorighet: null
+},
+NulageString: "Rådgivare hanterar",
+ExterntId: "05143279-61af-4674-aa00-9874e0436ec6",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21742,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8167,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:31:07.55",
+SkapadDatum: "2014-04-09T10:31:07.55",
+SistaAnsokanDatum: "2014-05-09T10:31:07.55",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:31:07.55",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21742,
+Nulagetyp: "Ny",
+UppdragHosRolltyp: "Jobbkontakt",
+Tillhorighet: null
+},
+NulageString: "Ansvarig matchar",
+ExterntId: "9ca6460d-f988-4877-9d33-16099d82a4d9",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21739,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8164,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:30:59.407",
+SkapadDatum: "2014-04-09T10:30:59.407",
+SistaAnsokanDatum: "2014-05-09T10:30:59.407",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:30:59.407",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21739,
+Nulagetyp: "AnsokanSkapad",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: null
+},
+NulageString: "Ansvarig har/tar emot ansökningar",
+ExterntId: "48e45700-af56-4a9c-b8bd-8bdab92086e1",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21736,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8161,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:30:51.397",
+SkapadDatum: "2014-04-09T10:30:51.397",
+SistaAnsokanDatum: "2014-05-09T10:30:51.397",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:30:51.397",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21736,
+Nulagetyp: "Ny",
+UppdragHosRolltyp: "Jobbkontakt",
+Tillhorighet: null
+},
+NulageString: "Ansvarig matchar",
+ExterntId: "ad6eb9d0-5603-48d4-98b6-3f65926cabc3",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21735,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8160,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:30:49.683",
+SkapadDatum: "2014-04-09T10:30:49.683",
+SistaAnsokanDatum: "2014-05-09T10:30:49.683",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:30:49.683",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "TRR",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21735,
+Nulagetyp: "Ny",
+UppdragHosRolltyp: "Jobbkontakt",
+Tillhorighet: "TRR"
+},
+NulageString: "Ansvarig matchar",
+ExterntId: "05949681-6aa1-4e20-9f57-69740f8b97d4",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21732,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8157,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:30:17.197",
+SkapadDatum: "2014-04-09T10:30:17.197",
+SistaAnsokanDatum: "2014-05-09T10:30:17.197",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:30:17.197",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21732,
+Nulagetyp: "KandidatPassande",
+UppdragHosRolltyp: "Radgivare",
+Tillhorighet: null
+},
+NulageString: "Rådgivare hanterar",
+ExterntId: "133aae69-1685-4a2f-8fea-95c896967aad",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21731,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8156,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:29:51.59",
+SkapadDatum: "2014-04-09T10:29:51.59",
+SistaAnsokanDatum: "2014-05-09T10:29:51.59",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:29:51.59",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21731,
+Nulagetyp: "AnsokanSkickadTillKund",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: null
+},
+NulageString: "Kund har fått leverans",
+ExterntId: "46e8ff31-c6bf-4ca4-b421-4690c47839a3",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21730,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8155,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:29:27.99",
+SkapadDatum: "2014-04-09T10:29:27.99",
+SistaAnsokanDatum: "2014-05-09T10:29:27.99",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:29:27.99",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21730,
+Nulagetyp: "Ny",
+UppdragHosRolltyp: "Jobbkontakt",
+Tillhorighet: null
+},
+NulageString: "Ansvarig matchar",
+ExterntId: "b7ff4547-1e65-4f08-8d8d-0b52f1f7c6c7",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21729,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8154,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:29:23.727",
+SkapadDatum: "2014-04-09T10:29:24.627",
+SistaAnsokanDatum: "2014-05-09T10:29:24.627",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:29:24.627",
+BevakningsDatum: null,
+Uppdragspaket: "Direktleverans",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21729,
+Nulagetyp: "AnsokanSkickadTillKund",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: null
+},
+NulageString: "Kund har fått leverans",
+ExterntId: "bb008d70-193d-45f0-9969-bf1cf356c35d",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+},
+{
+Id: 21728,
+Rubrik: "Rubrik 2014-04-09",
+Anstallningsform: "Anstallningsform 2014-04-09",
+Arbetsort: "Arbetsort 2014-04-09",
+ArbetsutbudFran: 0,
+ArbetsutbudTill: 0,
+AlderFran: 20,
+AlderTill: 30,
+TjanstBeskrivning: null,
+Lopnummer: 8153,
+SkapadAv: "FORRS",
+SkapadAvAnstalld: null,
+YrkeskategoriKod: "A",
+Grovsallningsvillkor: "",
+Tjanst: "TjänstBefattning_Test",
+Kvalifikationer: null,
+SenastAndradDatum: "2014-04-09T10:29:00.887",
+SkapadDatum: "2014-04-09T10:29:00.887",
+SistaAnsokanDatum: "2014-05-09T10:29:00.887",
+StoppDatum: null,
+TillsattDatum: null,
+AvslutadDatum: null,
+EstimeratSlutForRekryteringDatum: "2014-05-09T10:29:00.887",
+BevakningsDatum: null,
+Uppdragspaket: "EnbartAnnonsering",
+Uppdragsstatus: "Aktiv",
+Uppdragstyp: "Aktivitet",
+Rekryteringsomrade: "X",
+RekryteringsomradeString: "",
+Tillhorighet: "Okand",
+ForetagId: "235596",
+ForetagsNamn: "Tieto Sweden AB",
+ForetagsBeskrivning: null,
+KontaktpersonId: 0,
+ForetagKontaktsFornamn: null,
+ForetagKontaktsEfternamn: null,
+Foretagskontaktperson: null,
+EpostAdresserForLeverans: null,
+EpostAdressForLeverans: null,
+Kontaktpersoner: null,
+Kontaktperson: null,
+Nulage: {
+Id: 21728,
+Nulagetyp: "AnsokanSkickadTillKund",
+UppdragHosRolltyp: "Kund",
+Tillhorighet: null
+},
+NulageString: "Kund har fått leverans",
+ExterntId: "516554d5-970e-4bb7-89ea-26b856260fa7",
+AvslutsTyp: "KandidatFickJobb",
+LeveransplatsURL: null,
+Matchningskrav: [
+{
+KravTyp: "Bransch",
+KravAlla: false
+},
+{
+KravTyp: "Yrkeskunskap",
+KravAlla: false
+},
+{
+KravTyp: "SokerSomYrke",
+KravAlla: false
+},
+{
+KravTyp: "Sprak",
+KravAlla: false
+},
+{
+KravTyp: "Utbildning",
+KravAlla: false
+},
+{
+KravTyp: "Arbetsort",
+KravAlla: false
+},
+{
+KravTyp: "Korkort",
+KravAlla: false
+},
+{
+KravTyp: "Fardighet",
+KravAlla: false
+},
+{
+KravTyp: "Egenskap",
+KravAlla: false
+},
+{
+KravTyp: "Anstallningsform",
+KravAlla: false
+},
+{
+KravTyp: "Eget",
+KravAlla: false
+}
+],
+MatchningskravFlaggor: null,
+Ansokningskommentar: "Ansokningskommentar 2014-04-09",
+UtvaldaKlienter: null,
+UppdragFran: "FORRS"
+}
+]
+}

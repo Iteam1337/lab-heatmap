@@ -26,7 +26,7 @@ describe('MapCtrl', function () {
         .respond(200, cities);
 
       httpBackend
-        .whenPOST('http://trr-rest-api/uppdrag')
+        .whenPOST('http://trr-rest-api.iteamdev.se/uppdrag')
         .respond(200, {success:true});
     });
   });

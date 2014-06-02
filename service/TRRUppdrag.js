@@ -17,8 +17,7 @@ angular.module('lab-heatmap').service('TRRUppdrag', function ($http) {
     var promise = $http.post(trrUppdragUrl, trrPostdata).
       then(function(data) {
         return data.data.Uppdrag;
-    },
-      function(reason) {
+    }, function(reason) {
       console.log("Getting TRR Uppdrag failed.", reason);
     });
 
