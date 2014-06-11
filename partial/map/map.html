@@ -6,7 +6,7 @@
     <input type="text" id="search" ng-model="search" placeholder="Search">
     <div class="options" ng-click="map.showHeat = !map.showHeat" ng-class="{'heat-is-on':map.showHeat}">Show heat</div>
     <div class="btn-wrap">
-      <div class="btn" ng-click="reset()">
+      <div class="btn" ng-click="reset()" ng-if="!!currentMonth">
         Reset
       </div>
       <div class="btn" ng-click="play()" ng-if="!playing">Play</div>

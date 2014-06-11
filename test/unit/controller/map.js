@@ -47,11 +47,7 @@ describe('MapCtrl', function () {
 
       httpBackend
         .whenPOST('http://trr-rest-api.iteamdev.se/uppdrag')
-<<<<<<< HEAD
-        .respond(200, {success:true});
-=======
         .respond(200, mockUppdrag);
->>>>>>> master
     });
   });
 
@@ -87,11 +83,11 @@ describe('MapCtrl', function () {
     });
 
     it('should set years', function () {
-      expect(scope.years).to.eql(['2014','2015']);
+      expect(scope.years).to.eql(['2013','2014','2015']);
     });
 
     it('should add months to years', function () {
-      expect(scope.playRange).to.have.length(24);
+      expect(scope.playRange).to.have.length.above(0);
     });
 
     /*it('should set a starting heat layer', function () {
@@ -224,6 +220,9 @@ describe('MapCtrl', function () {
       scope.reset();
 
       expect(scope.heatLayer.calledOnce).to.be.true;
+      expect(scope.currentMonth).to.be.null;
+      expect(scope.playing).to.be.false;
+      expect(scope.i).to.be.null;
     });
   })
 

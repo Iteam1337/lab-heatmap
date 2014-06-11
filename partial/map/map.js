@@ -155,7 +155,9 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
     $scope.heatLayer($scope.layer);
     $scope.map.center = center;
 
-    // TODO: Also reset play timer?
+    $scope.currentMonth = null;
+    $scope.playing = false;
+    $scope.i = null;
   };
 
   $scope.centerOnJob = function (job) {
