@@ -10,7 +10,7 @@ angular.module('lab-heatmap').service('geo', function ($http, CONFIG) {
       .then(function (res) {
         return res.data[0];
       }, function (err) {
-        console.log('Unable to load location!', err);
+        //console.log('Unable to load location!', err);
         return { success:false };
       });
 

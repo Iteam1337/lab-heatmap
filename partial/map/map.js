@@ -13,15 +13,15 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
     if (!newData) {
       uppdrag.GetUppdrag().then(function () {
       uppdrag.items.map(function (upp) {
-        if (!!upp.Position.Lng) {
-          data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
-        }
+          if (!!upp.Position.Lng) {
+            data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
+          }
+        });
+      }, function(reason) {
+        //console.log("uppdrag.GetUppdrag failed", reason);
       });
-    }, function(reason) {
-      console.log("uppdrag.GetUppdrag failed", reason);
-    });
     } else {
-      uppdrag.items.map(function (upp) {
+      newData.map(function (upp) {
         if (!!upp.Position.Lng) {
           data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
         }
@@ -91,7 +91,7 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
   });
 
   $scope.uppdrag = uppdrag;
-  $scope.years = ['2014','2015'];
+  $scope.years = ['2013','2014','2015'];
   $scope.playRange = [];
 
   var range, i, interval;
@@ -143,7 +143,8 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, g
 
   $scope.changeData = function (date) {
     var filtered = uppdrag.items.filter(function (a) {
-      range = moment().range(a.Aktuell.Skapad, a.Aktuell.Avslutad);
+      var ended = a.Aktuell.Avslutad || '2100-12-31';
+      range = moment().range(a.Aktuell.Skapad, ended);
       return range.contains(moment(date));
     });
 
