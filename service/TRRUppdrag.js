@@ -7,7 +7,7 @@ angular.module('lab-heatmap').service('TRRUppdrag', function ($http) {
     "Lan":[],
     "OrderBy":"SenastAndradDatum",
     "Descending":true,  
-    "Take":"20000",
+    "Take":"50",
     "Skip":"0"
   };
 
@@ -16,7 +16,13 @@ angular.module('lab-heatmap').service('TRRUppdrag', function ($http) {
   function getUppdragFromTRR() {
     var promise = $http.post(trrUppdragUrl, trrPostdata).
       then(function(data) {
-        return data.data.Uppdrag;
+        console.log(data);
+        if(data.status === 200) {
+          return data.data.Uppdrag;
+        }
+        else {
+          console.log('Server returned and error', data);
+        }
     }, function(reason) {
       console.log("Getting TRR Uppdrag failed.", reason);
     });
@@ -29,21 +35,23 @@ angular.module('lab-heatmap').service('TRRUppdrag', function ($http) {
 
     var mappedUppdrag = [];
     data.then(function(uppdrag) {
-      uppdrag.map(function(trrUppdrag) {
-        mappedUppdrag.push({
-          'Befattning': trrUppdrag.Tjanst,
-          'Ort': trrUppdrag.Arbetsort,
-          'Lan': '',
-          'Position': {
-            Lat: 0.0,
-            Lng: 0.0
-          },
-          'Aktuell': {
-            'Skapad': trrUppdrag.SkapadDatum,
-            'Avslutad': trrUppdrag.TillsattDatum
-          }
+      if (uppdrag !== undefined) {
+        uppdrag.map(function(trrUppdrag) {
+          mappedUppdrag.push({
+            'Befattning': trrUppdrag.Tjanst,
+            'Ort': trrUppdrag.Arbetsort,
+            'Lan': '',
+            'Position': {
+              Lat: 0.0,
+              Lng: 0.0
+            },
+            'Aktuell': {
+              'Skapad': trrUppdrag.SkapadDatum,
+              'Avslutad': trrUppdrag.TillsattDatum
+            }
+          });
         });
-      });
+      }
 
       return mappedUppdrag;
     },

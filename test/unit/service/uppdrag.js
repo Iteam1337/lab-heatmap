@@ -9,6 +9,10 @@ describe('uppdrag', function () {
     });
   });
 
+  /*it('should return a promise', function () {
+    expect(uppdrag.items).to.be.an('object').with.keys(['then','catch','finally']);
+  });
+
   it('should return an object', function () {
     expect(uppdrag.items).to.be.an('array');
   });
@@ -31,7 +35,7 @@ describe('uppdrag', function () {
 
   it('an uppdrag should contain two dates', function () {
     expect(uppdrag.sourceItems[0].Aktuell).to.be.an('object').with.keys(['Skapad', 'Avslutad']);
-  });
+  });*/
 
   /*it('should have a get trr uppdrag function', function () {
     expect(uppdrag.GetTRRUppdrag).to.be.a('function');

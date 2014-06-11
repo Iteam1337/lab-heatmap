@@ -1,4 +1,4 @@
-angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, TRRUppdrag) {
+angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, geo) {
   'use strict';
 
   var center = {
@@ -11,13 +11,17 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, T
     var data = [];
 
     if (!newData) {
+      uppdrag.GetUppdrag().then(function () {
       uppdrag.items.map(function (upp) {
         if (!!upp.Position.Lng) {
           data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
         }
       });
+    }, function(reason) {
+      console.log("uppdrag.GetUppdrag failed", reason);
+    });
     } else {
-      newData.map(function (upp) {
+      uppdrag.items.map(function (upp) {
         if (!!upp.Position.Lng) {
           data.push(new google.maps.LatLng(upp.Position.Lat, upp.Position.Lng));
         }
@@ -25,6 +29,27 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, T
     }
 
     pointArray = new google.maps.MVCArray(data);
+
+    var gradient = [
+        'rgba(0, 255, 255, 0)',
+        'rgba(0, 255, 255, 1)',
+        'rgba(0, 191, 255, 1)',
+        'rgba(0, 127, 255, 1)',
+        'rgba(0, 63, 255, 1)',
+        'rgba(0, 0, 255, 1)',
+        'rgba(0, 0, 223, 1)',
+        'rgba(0, 0, 191, 1)',
+        'rgba(0, 0, 159, 1)',
+        'rgba(0, 0, 127, 1)',
+        'rgba(63, 0, 91, 1)',
+        'rgba(127, 0, 63, 1)',
+        'rgba(191, 0, 31, 1)',
+        'rgba(255, 0, 0, 1)'
+      ];
+
+      heatLayer.set('gradient', gradient);
+      heatLayer.set('radius', 25);
+
     heatLayer.setData(pointArray);
   };
 
@@ -141,6 +166,4 @@ angular.module('lab-heatmap').controller('MapCtrl', function ($scope, uppdrag, T
 
     $scope.heatLayer($scope.layer, jobs);
   };
-
-  console.log(TRRUppdrag.GetUppdrag());  
 });
